@@ -1,13 +1,10 @@
-mysql:
+test-runner-service:
   build:
-    image: mysql
-    context: mysql
+    image: test-runner-image
     dockerfile: Dockerfile
-  depends_on:
-   - postgres
   cached: true
-  environment:
-    MYSQL_ROOT_PASSWORD: password
+  depends_on:
+    - postgres
 postgres:
   build:
     image: postgres

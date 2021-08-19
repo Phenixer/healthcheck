@@ -1,2 +1,2 @@
-- service: mysql
+- service: test-runner-service
   command: echo hi
