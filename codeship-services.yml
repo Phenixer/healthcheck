@@ -8,7 +8,7 @@ test-runner-service:
 postgres:
   build:
     image: postgres
-    context: docker/postgres
+    context: postgres
     dockerfile: Dockerfile
   cached: true
   environment:
