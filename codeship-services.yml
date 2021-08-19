@@ -1,3 +1,12 @@
+postgres2:
+  build:
+    image: postgres2
+    context: postgres
+    dockerfile: Dockerfile
+  depends_on: postgres
+  cached: true
+  environment:
+    POSTGRES_PASSWORD: password
 postgres:
   build:
     image: postgres

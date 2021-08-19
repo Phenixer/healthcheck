@@ -1,2 +1,2 @@
-- service: postgres
-  command: echo "Hi"
+- service: postgres2
+  command: echo hi
