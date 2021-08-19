@@ -4,11 +4,11 @@ test-runner-service:
     dockerfile: Dockerfile
   cached: true
   depends_on:
-    - postgres
-postgres:
+    - postgres11
+postgres11:
   build:
-    image: postgres
-    context: postgres
+    image: postgres11
+    context: docker/postgres11
     dockerfile: Dockerfile
   cached: true
   environment:
