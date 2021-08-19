@@ -1,0 +1,2 @@
+- service: postgres
+  command: echo "Hi"
