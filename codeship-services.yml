@@ -1,12 +1,12 @@
-postgres2:
+mysql:
   build:
-    image: postgres2
-    context: postgres
+    image: mysql
+    context: mysql
     dockerfile: Dockerfile
   depends_on: postgres
   cached: true
   environment:
-    POSTGRES_PASSWORD: password
+    MYSQL_ROOT_PASSWORD: password
 postgres:
   build:
     image: postgres

@@ -1,2 +1,2 @@
-- service: postgres2
+- service: mysql
   command: echo hi
