@@ -3,7 +3,8 @@ mysql:
     image: mysql
     context: mysql
     dockerfile: Dockerfile
-  depends_on: postgres
+  depends_on:
+   - postgres
   cached: true
   environment:
     MYSQL_ROOT_PASSWORD: password
